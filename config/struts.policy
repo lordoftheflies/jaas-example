@@ -1,0 +1,11 @@
+grant   Principal com.tagish.auth.TypedPrincipal "user" {
+   
+   permission com.xor.auth.perm.URLPermission "/struts-example/editRegistration.do";
+};
+
+grant Principal * * {
+   
+   permission com.xor.auth.perm.URLPermission "/struts-example/logoff.do";
+   permission com.xor.auth.perm.URLPermission "/struts-example/logon.do";
+};
+
